@@ -2,6 +2,8 @@
 
 Um simples gerador de senhas desenvolvido usando HTML, CSS e JavaScript.
 
+![gerador-senhas](https://github.com/kellcrivelaroo/gerador-senhas/assets/133979933/664ba436-0b28-427f-b83b-27852e83b4fb)
+
 ## Descrição
 
 Este projeto tem como objetivo fornecer um gerador de senhas simples, criado usando as tecnologias web básicas: HTML, CSS e JavaScript. Com este gerador, você pode criar senhas seguras com diferentes comprimentos e combinações de caracteres.
