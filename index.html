@@ -74,11 +74,17 @@
             </label>
           </div>
         </div>
+        
+        <dialog id="successModal">
+          <p>Senha copiada para a área de transferência.</p>
+        </dialog>
       </section>
 
       <div class="submit">
         <button id="copy-2">Copiar senha</button>
       </div>
+
+      
     </main>
     
     <script>
@@ -89,6 +95,9 @@
       const securityIndicatorBarEl = document.querySelector(
         "#security-indicator-bar"
       )
+      const copyButton1 = document.querySelector("#copy-1")
+      const copyButton2 = document.querySelector("#copy-2")
+      const modal = document.querySelector("#successModal")
 
       let passwordLength = 16
 
@@ -181,6 +190,10 @@
 
       function copy() {
         navigator.clipboard.writeText(inputEl.value)
+        modal.showModal()
+        setTimeout(() => {
+          modal.close()
+        }, 1500);
       }
 
       const passwordLengthEl = document.querySelector("#password-length")
@@ -194,8 +207,8 @@
       numberCheckEl.addEventListener("click", generatePassword)
       symbolCheckEl.addEventListener("click", generatePassword)
 
-      document.querySelector("#copy-1").addEventListener("click", copy)
-      document.querySelector("#copy-2").addEventListener("click", copy)
+      copyButton1.addEventListener("click", copy)
+      copyButton2.addEventListener("click", copy)
       document
         .querySelector("#renew")
         .addEventListener("click", generatePassword)

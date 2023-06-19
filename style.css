@@ -264,3 +264,14 @@ main {
     width: 24px;
   }
 }
+
+#successModal {
+  color: #252525;
+  border-radius: 12px;
+  font-size: 1.2em;
+  border: 1px solid #c4c4c4;
+  padding: 24px 32px;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.15); 
+  text-align: center;
+  width: fit-content;
+}
